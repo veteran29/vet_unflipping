@@ -1,0 +1,6 @@
+# Build output
+releases/
+addons/*.pbo
+
+# Bikey
+*.biprivatekey

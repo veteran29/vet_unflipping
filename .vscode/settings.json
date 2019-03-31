@@ -1,0 +1,68 @@
+{
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#2a1951",
+        "statusBarItem.hoverBackground": "#3e2578",
+        "statusBar.foreground": "#e7e7e7"
+    },
+    "sqf.enableCBA": true,
+    "sqf.enableACE3": true,
+    "files.associations": {
+        "*.hpp": "sqf"
+    },
+    "sqflint.ignoredVariables": [
+        "_input0",
+        "_thisArgs",
+        "_thisId",
+        "_thisType",
+    ],
+    "sqflint.exclude": [],
+    "psi-header.lang-config": [
+        {
+            "license": "Custom",
+            "language": "sqf",
+            "rootDirFileName": "hemtt.json",
+            "begin": "/*",
+            "prefix": "    ",
+            "end": "*/",
+            "forceToTop": true
+        }
+    ],
+    "sqflint.includePrefixes": {
+        // Dokan PBO\P drive
+        "\\A3\\": "P:/a3/",
+        "\\a3\\": "P:/a3/",
+        "\\x\\": "P:/x/",
+    },
+    "psi-header.changes-tracking": {
+        "isActive": true,
+        "include": ["sqf"],
+        "modDate": "Last Update:",
+        "modDateFormat": "YYYY-MM-DD",
+        "autoHeader": "manualSave"
+    },
+    "psi-header.license-text": [
+        "GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html"
+    ],
+    "psi-header.templates": [
+        {
+            "language": "sqf",
+            "template": [
+                "vet_",
+                "",
+                "File: <<filename>>",
+                "Date: <<filecreated('YYYY-MM-DD')>>",
+                "Last Update:",
+                "License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html",
+                "",
+                "Description:",
+                "    No description added yet.",
+                "",
+                "Parameter(s):",
+                "    _localVariable - Description [DATATYPE, defaults to DEFAULTVALUE]",
+                "",
+                "Returns:",
+                "    Function reached the end [BOOL]"
+            ]
+        }
+    ]
+}

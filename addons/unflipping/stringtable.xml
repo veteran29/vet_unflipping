@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="vet_unflipping">
+
+    <!-- Settings  -->
+    <Key ID="STR_vet_unflipping_unit_mass_limit">
+        <Original>Unit mass limit</Original>
+        <Polish>Limit masy na jednostke</Polish>
+    </Key>
+    <Key ID="STR_vet_unflipping_unit_mass_limit_desc">
+        <Original>
+            Defines how much mass can be unflipped by single unit.
+            Default value should allow single unit to unflip most of small vehicles.
+        </Original>
+        <Polish>
+            Określa jak cięzki obiekt może być obrócony przez jedną jednostke.
+            Domyślna wartość powinna pozwolić na obrócenie większości małych pojazdów.
+        </Polish>
+    </Key>
+    <Key ID="STR_vet_unflipping_unit_man_limit">
+        <Original>Man limit</Original>
+        <Polish>Limit osób</Polish>
+    </Key>
+    <Key ID="STR_vet_unflipping_unit_man_limit_desc">
+        <Original>Defines maximal amount of people that can be needed for unflip.</Original>
+        <Polish>Określa maksymalną liczbe osób jaka może być potrzebna do obrócenia pojazdu.</Polish>
+    </Key>
+    <Key ID="STR_vet_unflipping_time">
+        <Original>Unflipping time</Original>
+        <Polish>Czas odwracania</Polish>
+    </Key>
+    <Key ID="STR_vet_unflipping_time_desc">
+        <Original>Defines how long it will take to unflip the vehicle.</Original>
+        <Polish>Określa jak długo będzie trwało obracanie pojazdu.</Polish>
+    </Key>
+
+    <!-- Actions -->
+    <Key ID="STR_vet_unfliping_act">
+        <Original>Unflip</Original>
+        <Polish>Obróć</Polish>
+    </Key>
+    <Key ID="STR_vet_unfliping_required">
+        <Original>Required people to unflip: %1</Original>
+        <Polish>Liczba osób potrzebna aby obrócić: %1</Polish>
+    </Key>
+    <Key ID="STR_vet_unfliping_need_more">
+        <Original>You need more people.</Original>
+        <Polish>Potrzeba więcej osób.</Polish>
+    </Key>
+    <Key ID="STR_vet_unfliping_waiting">
+        <Original>Not enough people. Waiting...</Original>
+        <Polish>Brak wystarczającej ilości osób. Oczekiwanie...</Polish>
+    </Key>
+    <Key ID="STR_vet_unfliping_doing">
+        <Original>Unfliping...</Original>
+        <Polish>Obracanie...</Polish>
+    </Key>
+</Project>
