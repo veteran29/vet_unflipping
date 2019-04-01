@@ -3,4 +3,5 @@ modname = "vet_unflipping"
 prefix = "vet"
 author = "veteran29"
 version = "1.0.0"
+"keyname" = "VET_Unflipping-{{version}}"
 files = ["mod.cpp"]
