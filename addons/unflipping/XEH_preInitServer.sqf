@@ -20,7 +20,7 @@
             _this setVariable ["vet_unflippingUnits", [], true];
         }, _vehicle, vet_unflipping_time] call CBA_fnc_waitAndExecute;
         // Inform clients that unflip is ready and force them into unflip action wait time
-        ["vet_unflipping_unflip_ready", vet_unflipping_time] call CBA_fnc_targetEvent;
+        ["vet_unflipping_unflip_ready", vet_unflipping_time, _unflippingUnits] call CBA_fnc_targetEvent;
     };
 
     diag_log text format ["[VET_Unflipping] Vehicle '%1', not enough people to unflip (%2)", _vehicle, _requiredUnits];
