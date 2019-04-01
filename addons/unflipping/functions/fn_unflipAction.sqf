@@ -22,7 +22,7 @@ params [
 #define UNFLIPPING_UNITS        (_vehicle getVariable ["vet_unflippingUnits", []])
 #define PLAYER                  ([] call CBA_fnc_currentUnit)
 
-PLAYER playActionNow "STAND";
+PLAYER playActionNow "PlayerStand";
 
 private _neededUnits = _vehicle call vet_unflipping_fnc_unflipRequiredAmount;
 
