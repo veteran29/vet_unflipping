@@ -26,7 +26,7 @@
     "SLIDER",
     [localize "STR_vet_unflipping_time", localize "STR_vet_unflipping_time_desc"],
     SETTINGS_CAT,
-    [1, 60, 5, 0],
+    [1, 10, 5, 0],
     true,
     {}
 ] call CBA_Settings_fnc_init;

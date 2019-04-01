@@ -22,6 +22,8 @@ params [
 #define UNFLIPPING_UNITS        (_vehicle getVariable ["vet_unflippingUnits", []])
 #define PLAYER                  ([] call CBA_fnc_currentUnit)
 
+PLAYER playActionNow "STAND";
+
 private _neededUnits = _vehicle call vet_unflipping_fnc_unflipRequiredAmount;
 
 // Inform server about unflipping start
@@ -32,17 +34,18 @@ if !(PLAYER in UNFLIPPING_UNITS) exitWith {
 // Notify
 [
     ["\a3\3den\data\attributes\loiterdirection\cw_ca.paa"],
-    [format [localize "STR_vet_unflipping_unflip_required", _neededUnits]]
+    [format [localize "STR_vet_unflipping_required", _neededUnits]]
 ] call CBA_fnc_notify;
 
 // Exec next frame, othwerwise we will crash the client
 [{
     [
-        localize "STR_vet_unflipping_unflip_waiting",
+        localize "STR_vet_unflipping_waiting",
         15,
         {
             params ["_vehicle"];
             !(UNFLIPPING_UNITS isEqualTo [])
+            && alive PLAYER
         },
         {
             params ["_vehicle"];
@@ -50,7 +53,7 @@ if !(PLAYER in UNFLIPPING_UNITS) exitWith {
             // Notify
             [
                 ["\a3\3den\data\attributes\loiterdirection\cw_ca.paa"],
-                [localize "STR_vet_unflipping_unflip_need_more"]
+                [localize "STR_vet_unflipping_need_more"]
             ] call CBA_fnc_notify;
         },
         {

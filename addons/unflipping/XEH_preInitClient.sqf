@@ -14,7 +14,7 @@
     [{
         // TODO animation
         [
-            localize "STR_vet_unflipping_unflip_doing",
+            localize "STR_vet_unflipping_doing",
             _this,
             {true},
             {},
@@ -30,7 +30,7 @@
 // Add ACE3 or Vanilla actions to vehicles
 if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {
 
-    private _unflipAction = ["vet_unflipping_unflip", localize "STR_vet_unfliping_act", "\a3\3den\data\attributes\loiterdirection\cw_ca.paa",
+    private _unflipAction = ["vet_unflipping_unflip", localize "STR_vet_unflipping_act", "\a3\3den\data\attributes\loiterdirection\cw_ca.paa",
         {
             _target call vet_unflipping_fnc_unflipAction;
         },

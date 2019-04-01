@@ -34,23 +34,23 @@
     </Key>
 
     <!-- Actions -->
-    <Key ID="STR_vet_unfliping_act">
+    <Key ID="STR_vet_unflipping_act">
         <Original>Unflip</Original>
         <Polish>Obróć</Polish>
     </Key>
-    <Key ID="STR_vet_unfliping_required">
+    <Key ID="STR_vet_unflipping_required">
         <Original>Required people to unflip: %1</Original>
         <Polish>Liczba osób potrzebna aby obrócić: %1</Polish>
     </Key>
-    <Key ID="STR_vet_unfliping_need_more">
+    <Key ID="STR_vet_unflipping_need_more">
         <Original>You need more people.</Original>
         <Polish>Potrzeba więcej osób.</Polish>
     </Key>
-    <Key ID="STR_vet_unfliping_waiting">
+    <Key ID="STR_vet_unflipping_waiting">
         <Original>Not enough people. Waiting...</Original>
         <Polish>Brak wystarczającej ilości osób. Oczekiwanie...</Polish>
     </Key>
-    <Key ID="STR_vet_unfliping_doing">
+    <Key ID="STR_vet_unflipping_doing">
         <Original>Unfliping...</Original>
         <Polish>Obracanie...</Polish>
     </Key>

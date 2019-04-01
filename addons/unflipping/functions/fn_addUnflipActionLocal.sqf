@@ -40,7 +40,7 @@ private _actionId = _object addAction _action;
 
 _object setUserActionText [
     _actionId ,
-    localize "STR_vet_unfliping_act",
+    localize "STR_vet_unflipping_act",
     "<img size='2' image='\a3\3den\data\attributes\loiterdirection\cw_ca.paa'/>"
 ];
 
