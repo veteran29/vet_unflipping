@@ -28,4 +28,9 @@ If ACE3 is detected unflipping action will be available in ACE3 Interaction menu
 
 ### Showcase
 
-[![Unflipping video](https://img.youtube.com/vi/rQ9ON5PmYS0/0.jpg)](https://www.youtube.com/watch?v=rQ9ON5PmYS0 "VET_Unflipping")
+Click to open video
+<center>
+    <a href="https://www.youtube.com/watch?v=rQ9ON5PmYS0">
+        <img title="VET_Unflipping video" src="https://media.giphy.com/media/S9ore9mifmSXU1tBG0/giphy.gif" />
+    </a>
+</center>
