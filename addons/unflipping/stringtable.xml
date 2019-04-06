@@ -17,8 +17,8 @@
             Domyślna wartość powinna pozwolić na obrócenie większości małych pojazdów.
         </Polish>
         <Spanish>
-            Define cuánta masa puede ser volcada por una sola unidad.
-            El valor por defecto debería permitir a un hombre volcar la mayoría de vehículos pequeños.
+            Define cuánta masa puede ser volteada por una sola unidad.
+            El valor por defecto debería permitir a un hombre voltear la mayoría de vehículos pequeños.
         </Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_unit_man_limit">
