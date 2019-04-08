@@ -37,7 +37,7 @@ if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {
         {
             [_player, _target, []] call ACE_common_fnc_canInteractWith
             && !canMove _target
-            && {alive _target}
+            && {alive _target && (vehicle _player) isEqualTo _player}
             && {!(_target isKindOf "Boxloader_Pallet_base")}
         }
     ] call ACE_interact_menu_fnc_createAction;
