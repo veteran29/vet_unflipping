@@ -5,6 +5,7 @@
     <Key ID="STR_vet_unflipping_unit_mass_limit">
         <Original>Unit mass limit</Original>
         <Polish>Limit masy na jednostke</Polish>
+        <Russian>Предел массы техники</Russian>
         <Spanish>Límite de masa de unidad</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_unit_mass_limit_desc">
@@ -16,6 +17,10 @@
             Określa jak cięzki obiekt może być obrócony przez jedną jednostke.
             Domyślna wartość powinna pozwolić na obrócenie większości małych pojazdów.
         </Polish>
+        <Russian>
+            Масса техники, которую может перевернуть один игрок.
+            Дефолтное значение позволяет перевернуть одному игроку небольшой транспорт.
+        </Russian>
         <Spanish>
             Define cuánta masa puede ser volteada por una sola unidad.
             El valor por defecto debería permitir a un hombre voltear la mayoría de vehículos pequeños.
@@ -24,21 +29,25 @@
     <Key ID="STR_vet_unflipping_unit_man_limit">
         <Original>Man limit</Original>
         <Polish>Limit osób</Polish>
+        <Russian>Необходимое кол-во людей</Russian>
         <Spanish>Límite de hombres</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_unit_man_limit_desc">
         <Original>Defines maximal amount of people that can be needed for unflip.</Original>
         <Polish>Określa maksymalną liczbe osób jaka może być potrzebna do obrócenia pojazdu.</Polish>
+        <Russian>Необходимое количество игроков для переворота техники</Russian>
         <Spanish>Define la cantidad máxima de personas que pueden necesitarse para voltear.</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_time">
         <Original>Unflipping time</Original>
         <Polish>Czas odwracania</Polish>
+        <Russian>Время переворота</Russian>
         <Spanish>Tiempo para voltear</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_time_desc">
         <Original>Defines how long it will take to unflip the vehicle.</Original>
         <Polish>Określa jak długo będzie trwało obracanie pojazdu.</Polish>
+        <Russian>Время, необходимое для переворота техники</Russian>
         <Spanish>Define cuánto tiempo tomará voltear el vehículo.</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_vehicle_mass_limit">
@@ -54,28 +63,33 @@
     <Key ID="STR_vet_unflipping_act">
         <Original>Unflip</Original>
         <Polish>Obróć</Polish>
+        <Russian>Перевернуть</Russian>
         <Spanish>Voltear</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_required">
         <Original>Required people to unflip: %1</Original>
         <Polish>Liczba osób potrzebna aby obrócić: %1</Polish>
+        <Russian>Требуется людей для переворота: %1 чел.</Russian>
         <Spanish>Gente necesaria para volcar: %1</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_need_more">
         <Original>You need more people.</Original>
         <Polish>Potrzeba więcej osób.</Polish>
+        <Russian>Вам нужно больше людей</Russian>
         <Spanish>Se necesitan más personas</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_waiting">
         <Original>Not enough people. Waiting...</Original>
         <Polish>Brak wystarczającej ilości osób. Oczekiwanie...</Polish>
+        <Russian>Не хватает людей! Ожидайте или отмените действие...</Russian>
         <Spanish>No hay personas suficientes. Esperando...</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_doing">
         <Original>Unfliping...</Original>
         <Polish>Obracanie...</Polish>
+        <Russian>Переворачиваем...</Russian>
         <Spanish>Volteando...</Spanish>
-    </Key>STR_vet_unflipping_to_heavy
+    </Key>
     <Key ID="STR_vet_unflipping_to_heavy">
         <Original>To heavy</Original>
         <Polish>Za ciężkie</Polish>
