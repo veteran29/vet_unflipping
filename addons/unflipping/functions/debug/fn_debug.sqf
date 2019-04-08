@@ -3,7 +3,7 @@
 
     File: fn_debug.sqf
     Date: 2019-04-01
-    Last Update: 2019-04-01
+    Last Update: 2019-04-09
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -15,7 +15,9 @@
     Returns:
         NOTHING
 */
-params ["_enable", false, [true]];
+params [
+    ["_enable", false, [true]]
+];
 
 if (_enable) then {
 
