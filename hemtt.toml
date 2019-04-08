@@ -7,6 +7,7 @@ files = ["mod.cpp"]
 
 keyname = "vet_unflipping_{{version}}"
 signame = "{{prefix}}_{{version}}-{{git \"id 8\"}}"
+reuse_private_key = true
 
 releasebuild = [
     "!Set_version",
