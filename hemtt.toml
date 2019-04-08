@@ -5,3 +5,17 @@ author = "veteran29"
 version = "1.0.0"
 "keyname" = "VET_Unflipping-{{version}}"
 files = ["mod.cpp"]
+
+keyname = "vet_unflipping_{{version}}"
+signame = "{{prefix}}_{{version}}-{{git \"id 8\"}}"
+
+releasebuild = [
+    "!Set_version",
+]
+
+[scripts]
+    [scripts.Set_version]
+        steps_windows = [
+            "powershell ./tools/Set-Version.ps1 {{version}}"
+        ]
+        # show_output = true
