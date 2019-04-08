@@ -41,6 +41,14 @@
         <Polish>Określa jak długo będzie trwało obracanie pojazdu.</Polish>
         <Spanish>Define cuánto tiempo tomará voltear el vehículo.</Spanish>
     </Key>
+    <Key ID="STR_vet_unflipping_vehicle_mass_limit">
+        <Original>Maximum unflip weight</Original>
+        <Polish>Maksymalna masa odwracanego pojazdu</Polish>
+    </Key>
+    <Key ID="STR_vet_unflipping_vehicle_mass_limit_desc">
+        <Original>Vehicles with weight above this limit will be not unflippable.</Original>
+        <Polish>Pojazdy z masą powyżej tego limitu nie będą mogły być obrócone.</Polish>
+    </Key>
 
     <!-- Actions -->
     <Key ID="STR_vet_unflipping_act">
@@ -67,5 +75,9 @@
         <Original>Unfliping...</Original>
         <Polish>Obracanie...</Polish>
         <Spanish>Volteando...</Spanish>
+    </Key>STR_vet_unflipping_to_heavy
+    <Key ID="STR_vet_unflipping_to_heavy">
+        <Original>To heavy</Original>
+        <Polish>Za ciężkie</Polish>
     </Key>
 </Project>
