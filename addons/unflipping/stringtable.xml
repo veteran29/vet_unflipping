@@ -69,6 +69,9 @@
         <German>Fahrzeuge über diesem Maximalwert können nicht aufgerichtet werden.</German>
         <Polish>Pojazdy z masą powyżej tego limitu nie będą mogły być obrócone.</Polish>
     </Key>
+    <Key ID="STR_vet_unflipping_require_toolkit">
+        <Original>Require a ToolKit to unflip a vehicle.</Original>
+    </Key>
 
     <!-- Actions -->
     <Key ID="STR_vet_unflipping_act">

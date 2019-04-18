@@ -11,6 +11,7 @@ class CfgFunctions
             class unflipAction {};
             class unflipRequiredAmount {};
             class unflipVehicle {};
+            class hasToolKitRequired {};
         };
 
         class debug
