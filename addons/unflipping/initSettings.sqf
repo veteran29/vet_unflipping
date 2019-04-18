@@ -40,3 +40,13 @@
     true,
     {}
 ] call CBA_Settings_fnc_init;
+
+[
+    "vet_unflipping_require_toolkit",
+    "CHECKBOX",
+    [localize "STR_vet_unflipping_require_toolkit", localize "STR_vet_unflipping_require_toolkit"],
+    SETTINGS_CAT,
+    false,
+    true,
+    {}
+] call CBA_Settings_fnc_init;

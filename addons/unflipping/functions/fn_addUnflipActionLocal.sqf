@@ -35,7 +35,8 @@ private _action = [
     "
     !canMove _target
     && {alive _target
-    && (vehicle _this) isEqualTo _this}
+    && (vehicle _this) isEqualTo _this
+    && {[_this] call vet_unflipping_fnc_hasToolKitRequired}}
     ", // _target, _this, _originalTarget
     8
 ];
