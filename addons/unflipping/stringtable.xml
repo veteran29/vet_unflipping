@@ -70,7 +70,8 @@
         <Polish>Pojazdy z masą powyżej tego limitu nie będą mogły być obrócone.</Polish>
     </Key>
     <Key ID="STR_vet_unflipping_require_toolkit">
-        <Original>Require a ToolKit to unflip a vehicle</Original>
+        <Original>It requires a ToolKit to unflip a vehicle</Original>
+        <German>Ein Werkzeugkasten wird zum Aufrichten benötigt</German>
         <Polish>Wymagaj zestawu naprawczego do odwracania pojazdów</Polish>
     </Key>
 
