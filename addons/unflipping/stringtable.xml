@@ -86,7 +86,7 @@
         <Original>Required people to unflip: %1</Original>
         <German>Benötigte Einheiten zum aufrichten: %1</German>
         <Polish>Liczba osób potrzebna aby obrócić: %1</Polish>
-        <Russian>Требуется людей для переворота: %1 чел.</Russian>
+        <Russian>Для переворота нужно: %1 чел.</Russian>
         <Spanish>Gente necesaria para volcar: %1</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_need_more">
@@ -114,5 +114,6 @@
         <Original>To heavy</Original>
         <German>Zu schwer</German>
         <Polish>Za ciężkie</Polish>
+        <Russian>Слишком тяжелый</Russian>
     </Key>
 </Project>
