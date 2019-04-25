@@ -63,16 +63,19 @@
         <Original>Maximum unflip weight</Original>
         <German>Maximale Masse</German>
         <Polish>Maksymalna masa odwracanego pojazdu</Polish>
+        <Spanish>Peso máximo para voltear</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_vehicle_mass_limit_desc">
         <Original>Vehicles with weight above this limit will be not unflippable.</Original>
         <German>Fahrzeuge über diesem Maximalwert können nicht aufgerichtet werden.</German>
         <Polish>Pojazdy z masą powyżej tego limitu nie będą mogły być obrócone.</Polish>
+        <Spanish>Vehículos con un peso mayor a este límite no pueden voltearse</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_require_toolkit">
         <Original>It requires a ToolKit to unflip a vehicle</Original>
         <German>Ein Werkzeugkasten wird zum Aufrichten benötigt</German>
         <Polish>Wymagaj zestawu naprawczego do odwracania pojazdów</Polish>
+        <Spanish>Un kit de herramientas es requerido para voltear vehículos</Spanish>
     </Key>
 
     <!-- Actions -->
@@ -88,7 +91,7 @@
         <German>Benötigte Einheiten zum aufrichten: %1</German>
         <Polish>Liczba osób potrzebna aby obrócić: %1</Polish>
         <Russian>Для переворота нужно: %1 чел.</Russian>
-        <Spanish>Gente necesaria para volcar: %1</Spanish>
+        <Spanish>Gente necesaria para voltear: %1</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_need_more">
         <Original>You need more people.</Original>
@@ -102,7 +105,7 @@
         <German>Nicht genug Leute. Warte...</German>
         <Polish>Brak wystarczającej ilości osób. Oczekiwanie...</Polish>
         <Russian>Не хватает людей! Ожидайте или отмените действие...</Russian>
-        <Spanish>No hay personas suficientes. Esperando...</Spanish>
+        <Spanish>No hay suficientes personas. Esperando...</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_doing">
         <Original>Unfliping...</Original>
@@ -116,5 +119,6 @@
         <German>Zu schwer</German>
         <Polish>Za ciężkie</Polish>
         <Russian>Слишком тяжелый</Russian>
+        <Spanish>Demasiado pesado</Spanish>
     </Key>
 </Project>
