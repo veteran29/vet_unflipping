@@ -3,7 +3,7 @@
 
     File: fn_unflipAction.sqf
     Date: 2019-03-14
-    Last Update: 2019-04-01
+    Last Update: 2019-04-08
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -18,6 +18,13 @@
 params [
     ["_vehicle", objNull, [objNull]]
 ];
+
+if (vet_unflipping_vehicle_mass_limit < getMass _vehicle) exitWith {
+    [
+        ["a3\3den\data\controlsgroups\tutorial\close_ca.paa", 1, [1,0,0]],
+        [localize "STR_vet_unflipping_to_heavy"]
+    ] call CBA_fnc_notify;
+};
 
 #define UNFLIPPING_UNITS        (_vehicle getVariable ["vet_unflippingUnits", []])
 #define PLAYER                  ([] call CBA_fnc_currentUnit)

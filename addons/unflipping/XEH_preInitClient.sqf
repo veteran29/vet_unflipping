@@ -37,8 +37,9 @@ if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {
         {
             [_player, _target, []] call ACE_common_fnc_canInteractWith
             && !canMove _target
-            && {alive _target}
+            && {alive _target && (vehicle _player) isEqualTo _player}
             && {!(_target isKindOf "Boxloader_Pallet_base")}
+            && {[_player] call vet_unflipping_fnc_hasToolKitRequired}
         }
     ] call ACE_interact_menu_fnc_createAction;
     ["LandVehicle", 0, ["ACE_MainActions"], _unflipAction, true] call ACE_interact_menu_fnc_addActionToClass;

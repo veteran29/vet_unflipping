@@ -4,6 +4,8 @@ Ever got in trouble because of Splendid physics? Fear no more!
 
 This small utility addon allows players to perform Unflip on vehicles that are on their side or upside down.
 
+[BI Forum Thread](https://forums.bohemia.net/forums/topic/222712-vet_unflipping/)
+
 ### Requirements
 - [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
 - Installed both on clients and server

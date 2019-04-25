@@ -30,3 +30,23 @@
     true,
     {}
 ] call CBA_Settings_fnc_init;
+
+[
+    "vet_unflipping_vehicle_mass_limit",
+    "SLIDER",
+    [localize "STR_vet_unflipping_vehicle_mass_limit", localize "STR_vet_unflipping_vehicle_mass_limit"],
+    SETTINGS_CAT,
+    [0, 100000, 100000, 0],
+    true,
+    {}
+] call CBA_Settings_fnc_init;
+
+[
+    "vet_unflipping_require_toolkit",
+    "CHECKBOX",
+    [localize "STR_vet_unflipping_require_toolkit", localize "STR_vet_unflipping_require_toolkit"],
+    SETTINGS_CAT,
+    false,
+    true,
+    {}
+] call CBA_Settings_fnc_init;

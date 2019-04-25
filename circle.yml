@@ -1,0 +1,42 @@
+version: 2
+jobs:
+  validate-scripts:
+    docker:
+      - image: acemod/sqflint:latest
+    steps:
+      - checkout
+      - run:
+          name: Validate SQF and Config style
+          command: python tools/sqf_validator.py && python tools/config_style_checker.py
+
+  linting:
+    docker:
+      - image: acemod/sqflint:latest
+    steps:
+      - checkout
+      - run:
+          name: Lint sqf code
+          command: sqflint -d addons || true
+
+  hemtt:
+    docker:
+      - image: hemtt/hemtt:master
+    steps:
+      - checkout
+      - run:
+          name: Version
+          command: hemtt --version
+      - run:
+          name: Build
+          command: hemtt build
+
+
+workflows:
+  version: 2
+  build-job:
+    jobs:
+      - linting
+      - validate-scripts
+      - hemtt:
+          requires:
+            - validate-scripts
