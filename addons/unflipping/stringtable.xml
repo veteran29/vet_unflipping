@@ -63,18 +63,21 @@
         <Original>Maximum unflip weight</Original>
         <German>Maximale Masse</German>
         <Polish>Maksymalna masa odwracanego pojazdu</Polish>
+        <Russian>Максимальный вес</Russian>
         <Spanish>Peso máximo para voltear</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_vehicle_mass_limit_desc">
         <Original>Vehicles with weight above this limit will be not unflippable.</Original>
         <German>Fahrzeuge über diesem Maximalwert können nicht aufgerichtet werden.</German>
         <Polish>Pojazdy z masą powyżej tego limitu nie będą mogły być obrócone.</Polish>
+        <Russian>Транспорт с весом, превышающим этот предел, не смогут перевернуть.</Russian>
         <Spanish>Vehículos con un peso mayor a este límite no pueden voltearse</Spanish>
     </Key>
     <Key ID="STR_vet_unflipping_require_toolkit">
         <Original>It requires a ToolKit to unflip a vehicle</Original>
         <German>Ein Werkzeugkasten wird zum Aufrichten benötigt</German>
         <Polish>Wymagaj zestawu naprawczego do odwracania pojazdów</Polish>
+        <Russian>Требуется набор инструментов для переворота транспорта</Russian>
         <Spanish>Un kit de herramientas es requerido para voltear vehículos</Spanish>
     </Key>
 
