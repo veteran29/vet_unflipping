@@ -20,6 +20,8 @@ If you would like to configure the addon to behave somewhate more "realistic" yo
 - Unit mass limit - How much can be unflipped by single unit (default: 3000)
 - Man limit - Maximum amount of people that can be needed to unflip vehicle (default: 7)
 - Unflipping time - How long does it take to unflip vehicle (default: 5)
+- Maximum unflip weight - Vehicles with weight above this limit will be not unflippable (default: 100000)
+- Require toolkit (default: false)
 
 ### Vanilla / ACE Actions
 
