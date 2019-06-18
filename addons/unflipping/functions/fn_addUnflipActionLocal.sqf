@@ -3,7 +3,7 @@
 
     File: fn_addUnflipAction.sqf
     Date: 2019-04-01
-    Last Update: 2019-04-08
+    Last Update: 2019-06-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -33,10 +33,7 @@ private _action = [
     true,
     "",
     "
-    !canMove _target
-    && {alive _target
-    && {vehicle _this) isEqualTo _this}
-    && {[_this] call vet_unflipping_fnc_hasToolKitRequired}
+    [_this, _target] call vet_unflipping_fnc_canUnflipLocal
     ", // _target, _this, _originalTarget
     8
 ];
