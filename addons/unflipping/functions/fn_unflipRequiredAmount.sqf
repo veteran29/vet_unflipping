@@ -3,7 +3,7 @@
 
     File: fn_unflipRequiredAmount.sqf
     Date: 2019-03-14
-    Last Update: 2019-04-01
+    Last Update: 2019-06-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -19,5 +19,5 @@ params [
     ["_vehicle", objNull, [objNull]]
 ];
 
-// Every 3t needs one man, max seven, min one
-floor ((getMass _vehicle / vet_unflipping_unit_mass_limit) min vet_unflipping_unit_man_limit) max 1
+// Every "vet_unflipping_unit_mass_limit" needs one man, max "vet_unflipping_unit_man_limit", min one
+ceil ((getMass _vehicle / vet_unflipping_unit_mass_limit) min vet_unflipping_unit_man_limit) max 1
