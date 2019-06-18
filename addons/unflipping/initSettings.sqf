@@ -9,7 +9,7 @@
     [0, 100000, 3000, 0],
     true,
     {}
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "vet_unflipping_unit_man_limit",
@@ -19,7 +19,7 @@
     [1, 100, 7, 0],
     true,
     {}
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "vet_unflipping_time",
@@ -29,7 +29,7 @@
     [1, 600, 5, 0],
     true,
     {}
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "vet_unflipping_vehicle_mass_limit",
@@ -39,7 +39,7 @@
     [0, 100000, 100000, 0],
     true,
     {}
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
 
 [
     "vet_unflipping_require_toolkit",
@@ -49,4 +49,14 @@
     false,
     true,
     {}
-] call CBA_Settings_fnc_init;
+] call CBA_fnc_addSetting;
+
+[
+    "vet_unflipping_require_serviceVehicle",
+    "CHECKBOX",
+    [localize "STR_vet_unflipping_require_serviceVehicle", localize "STR_vet_unflipping_require_serviceVehicle"],
+    SETTINGS_CAT,
+    false,
+    true,
+    {}
+] call CBA_fnc_addSetting;
