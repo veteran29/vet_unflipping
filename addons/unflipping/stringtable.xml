@@ -8,6 +8,7 @@
         <Polish>Limit masy na jednostke</Polish>
         <Russian>Предел массы техники</Russian>
         <Spanish>Límite de masa de unidad</Spanish>
+        <Chinesesimp>单位质量限制</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_unit_mass_limit_desc">
         <Original>
@@ -30,6 +31,10 @@
             Define cuánta masa puede ser volteada por una sola unidad.
             El valor por defecto debería permitir a un hombre voltear la mayoría de vehículos pequeños.
         </Spanish>
+        <Chinesesimp>
+            设定一个单位可以翻正的物体的最大质量。
+            默认值可使一个单位翻正大多数小型载具。
+        </Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_unit_man_limit">
         <Original>Man limit</Original>
@@ -37,6 +42,7 @@
         <Polish>Limit osób</Polish>
         <Russian>Необходимое кол-во людей</Russian>
         <Spanish>Límite de hombres</Spanish>
+        <Chinesesimp>人数限制</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_unit_man_limit_desc">
         <Original>Defines maximal amount of people that can be needed for unflip.</Original>
@@ -44,6 +50,7 @@
         <Polish>Określa maksymalną liczbe osób jaka może być potrzebna do obrócenia pojazdu.</Polish>
         <Russian>Необходимое количество игроков для переворота техники</Russian>
         <Spanish>Define la cantidad máxima de personas que pueden necesitarse para voltear.</Spanish>
+        <Chinesesimp>设定单次翻正操作的最大操作人数限制。</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_time">
         <Original>Unflipping time</Original>
@@ -51,6 +58,7 @@
         <Polish>Czas odwracania</Polish>
         <Russian>Время переворота</Russian>
         <Spanish>Tiempo para voltear</Spanish>
+        <Chinesesimp>翻正时间</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_time_desc">
         <Original>Defines how long it will take to unflip the vehicle.</Original>
@@ -58,6 +66,7 @@
         <Polish>Określa jak długo będzie trwało obracanie pojazdu.</Polish>
         <Russian>Время, необходимое для переворота техники</Russian>
         <Spanish>Define cuánto tiempo tomará voltear el vehículo.</Spanish>
+        <Chinesesimp>设定翻正载具要消耗多长时间。</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_vehicle_mass_limit">
         <Original>Maximum unflip weight</Original>
@@ -65,6 +74,7 @@
         <Polish>Maksymalna masa odwracanego pojazdu</Polish>
         <Russian>Максимальный вес</Russian>
         <Spanish>Peso máximo para voltear</Spanish>
+        <Chinesesimp>最大翻正重量</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_vehicle_mass_limit_desc">
         <Original>Vehicles with weight above this limit will be not unflippable.</Original>
@@ -72,6 +82,7 @@
         <Polish>Pojazdy z masą powyżej tego limitu nie będą mogły być obrócone.</Polish>
         <Russian>Транспорт с весом, превышающим этот предел, не смогут перевернуть.</Russian>
         <Spanish>Vehículos con un peso mayor a este límite no pueden voltearse</Spanish>
+        <Chinesesimp>无法翻正大于此重量的载具。</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_require_toolkit">
         <Original>It requires a ToolKit to unflip a vehicle</Original>
@@ -79,6 +90,7 @@
         <Polish>Wymagaj zestawu naprawczego do odwracania pojazdów</Polish>
         <Russian>Требуется набор инструментов для переворота транспорта</Russian>
         <Spanish>Un kit de herramientas es requerido para voltear vehículos</Spanish>
+        <Chinesesimp>需要携带工具包才能翻正载具</Chinesesimp>
     </Key>
 
     <!-- Actions -->
@@ -88,6 +100,7 @@
         <Polish>Obróć</Polish>
         <Russian>Перевернуть</Russian>
         <Spanish>Voltear</Spanish>
+        <Chinesesimp>翻正</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_required">
         <Original>Required people to unflip: %1</Original>
@@ -95,6 +108,7 @@
         <Polish>Liczba osób potrzebna aby obrócić: %1</Polish>
         <Russian>Для переворота нужно: %1 чел.</Russian>
         <Spanish>Gente necesaria para voltear: %1</Spanish>
+        <Chinesesimp>需要 %1 人才能翻正载具</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_need_more">
         <Original>You need more people.</Original>
@@ -102,6 +116,7 @@
         <Polish>Potrzeba więcej osób.</Polish>
         <Russian>Вам нужно больше людей</Russian>
         <Spanish>Se necesitan más personas</Spanish>
+        <Chinesesimp>你需要更多的人手。</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_waiting">
         <Original>Not enough people. Waiting...</Original>
@@ -109,6 +124,7 @@
         <Polish>Brak wystarczającej ilości osób. Oczekiwanie...</Polish>
         <Russian>Не хватает людей! Ожидайте или отмените действие...</Russian>
         <Spanish>No hay suficientes personas. Esperando...</Spanish>
+        <Chinesesimp>人手不够, 等待中...</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_doing">
         <Original>Unfliping...</Original>
@@ -116,6 +132,7 @@
         <Polish>Obracanie...</Polish>
         <Russian>Переворачиваем...</Russian>
         <Spanish>Volteando...</Spanish>
+        <Chinesesimp>翻正中...</Chinesesimp>
     </Key>
     <Key ID="STR_vet_unflipping_to_heavy">
         <Original>To heavy</Original>
@@ -123,5 +140,6 @@
         <Polish>Za ciężkie</Polish>
         <Russian>Слишком тяжелый</Russian>
         <Spanish>Demasiado pesado</Spanish>
+        <Chinesesimp>过重</Chinesesimp>
     </Key>
 </Project>
