@@ -50,12 +50,13 @@ if !(PLAYER in UNFLIPPING_UNITS) exitWith {
         localize "STR_vet_unflipping_waiting",
         15,
         {
-            params ["_vehicle"];
+            _this#0 params ["_vehicle"];
             !(UNFLIPPING_UNITS isEqualTo [])
             && alive PLAYER
         },
+        // onSuccess
         {
-            params ["_vehicle"];
+            _this#0 params ["_vehicle"];
             ["vet_unflipping_unflip_stop", [_vehicle, PLAYER]] call CBA_fnc_serverEvent;
             // Notify
             [
@@ -63,9 +64,15 @@ if !(PLAYER in UNFLIPPING_UNITS) exitWith {
                 [localize "STR_vet_unflipping_need_more"]
             ] call CBA_fnc_notify;
         },
+        // onFailure
         {
-            params ["_vehicle"];
-            ["vet_unflipping_unflip_stop", [_vehicle, PLAYER]] call CBA_fnc_serverEvent;
+            params ["_args","","","","_failureCode"];
+            _args params ["_vehicle"];
+
+            // don't stop unflipping if waiting progressBar was closed by new progressBar
+            if (_failureCode != 3) then {
+                ["vet_unflipping_unflip_stop", [_vehicle, PLAYER]] call CBA_fnc_serverEvent;
+            };
         },
         _this
     ] call CBA_fnc_progressBar;

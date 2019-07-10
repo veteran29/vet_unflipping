@@ -14,13 +14,30 @@
     // Enough people, exit and unflip vehicle
     if (_requiredUnits <= count _unflippingUnits) exitWith {
         diag_log text format ["[VET_Unflipping] Vehicle '%1', enough people to unflip (%2)", _vehicle, _requiredUnits];
+
         // Schedule unflip
-        [{
-            _this call vet_unflipping_fnc_unflipVehicle;
-            _this setVariable ["vet_unflippingUnits", [], true];
-        }, _vehicle, vet_unflipping_time] call CBA_fnc_waitAndExecute;
+        [
+            // condition
+            {
+                params ["_vehicle","_requiredUnits"];
+                count (_vehicle getVariable ["vet_unflippingUnits", []]) < _requiredUnits
+            },
+            // statement (failure)
+            {},
+            // args
+            [_vehicle,_requiredUnits],
+            // timeout
+            vet_unflipping_time,
+            // onTimeout (success)
+            {
+                params ["_vehicle"];
+                _vehicle call vet_unflipping_fnc_unflipVehicle;
+                _vehicle setVariable ["vet_unflippingUnits", [], true];
+            }
+        ] call CBA_fnc_waitUntilAndExecute;
+
         // Inform clients that unflip is ready and force them into unflip action wait time
-        ["vet_unflipping_unflip_ready", vet_unflipping_time, _unflippingUnits] call CBA_fnc_targetEvent;
+        ["vet_unflipping_unflip_ready", [_vehicle, _requiredUnits, vet_unflipping_time], _unflippingUnits] call CBA_fnc_targetEvent;
     };
 
     diag_log text format ["[VET_Unflipping] Vehicle '%1', not enough people to unflip (%2)", _vehicle, _requiredUnits];
