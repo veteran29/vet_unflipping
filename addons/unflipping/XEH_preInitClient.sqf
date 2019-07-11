@@ -32,7 +32,7 @@
             {},
             // onFailure
             {
-                params ["_args","","","","_failureCode"];
+                params ["_args", "", "", "", "_failureCode"];
                 _args params ["_vehicle", "", ""];
 
                 // user hit ESC
