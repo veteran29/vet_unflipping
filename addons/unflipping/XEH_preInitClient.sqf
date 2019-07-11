@@ -1,5 +1,6 @@
 #include "initSettings.sqf"
 
+#define PLAYER                  ([] call CBA_fnc_currentUnit)
 
 ["vet_unflipping_unflip_start_client", {
     diag_log text "[VET_Unflipping] Starting action";
@@ -8,23 +9,52 @@
 
 // Force player to wait for unflipping time
 ["vet_unflipping_unflip_ready", {
-    params ["_time"];
+
     diag_log text "[VET_Unflipping] Unflip ready";
-    // Spawn new unclosable progressbar for unflip action time
+
+    // Spawn new progressbar for unflip action time
     [{
         // TODO animation
         [
             localize "STR_vet_unflipping_doing",
+            // time
+            _this#2,
+            // condition
+            {
+                params ["_args", "", "_elapsedTime"];
+                _args params ["_vehicle", "_requiredUnits"];
+
+                // don't check before 1s elapsed to wait for publicVariable synchronization
+                _elapsedTime < 1 ||
+                {count (_vehicle getVariable ["vet_unflippingUnits", []]) >= _requiredUnits}
+            },
+            // onSuccess
+            {},
+            // onFailure
+            {
+                params ["_args", "", "", "", "_failureCode"];
+                _args params ["_vehicle", "", ""];
+
+                // user hit ESC
+                if (_failureCode == 1) then {
+                    ["vet_unflipping_unflip_stop", [_vehicle, PLAYER]] call CBA_fnc_serverEvent;
+
+                // user did not hit ESC --> other reason for failure
+                } else {
+                    // if user is in unflippingUnits --> enter wait mode again
+                    // if not --> server has completed unflipping and reset the array
+                    if (PLAYER in (_vehicle getVariable ["vet_unflippingUnits", []])) then {
+                        [_vehicle] call vet_unflipping_fnc_unflipAction;
+                    };
+                };
+            },
+            // args
             _this,
-            {true},
-            {},
-            {},
-            [],
             true, // block mouse
             true, // block keys
-            false // allow close (esc)
+            true // allow close (esc)
         ] call CBA_fnc_progressBar;
-    }, _time] call CBA_fnc_execNextFrame;
+    }, _this] call CBA_fnc_execNextFrame;
 }] call CBA_fnc_addEventHandler;
 
 // Add ACE3 or Vanilla actions to vehicles
