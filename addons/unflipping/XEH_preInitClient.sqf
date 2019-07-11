@@ -43,7 +43,7 @@
                 } else {
                     // if user is in unflippingUnits --> enter wait mode again
                     // if not --> server has completed unflipping and reset the array
-                    if (PLAYER in (_vehicle getVariable ["vet_unflippingUnits",[]])) then {
+                    if (PLAYER in (_vehicle getVariable ["vet_unflippingUnits", []])) then {
                         [_vehicle] call vet_unflipping_fnc_unflipAction;
                     };
                 };
