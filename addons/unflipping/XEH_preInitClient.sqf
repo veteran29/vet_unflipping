@@ -21,7 +21,7 @@
             _this#2,
             // condition
             {
-                params ["_args","","_elapsedTime"];
+                params ["_args", "", "_elapsedTime"];
                 _args params ["_vehicle", "_requiredUnits"];
 
                 // don't check before 1s elapsed to wait for publicVariable synchronization
