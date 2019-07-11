@@ -19,7 +19,7 @@
         [
             // condition
             {
-                params ["_vehicle","_requiredUnits"];
+                params ["_vehicle", "_requiredUnits"];
                 count (_vehicle getVariable ["vet_unflippingUnits", []]) < _requiredUnits
             },
             // statement (failure)
