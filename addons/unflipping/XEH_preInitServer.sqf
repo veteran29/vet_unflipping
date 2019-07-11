@@ -25,7 +25,7 @@
             // statement (failure)
             {},
             // args
-            [_vehicle,_requiredUnits],
+            [_vehicle, _requiredUnits],
             // timeout
             vet_unflipping_time,
             // onTimeout (success)
