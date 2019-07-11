@@ -66,7 +66,7 @@ if !(PLAYER in UNFLIPPING_UNITS) exitWith {
         },
         // onFailure
         {
-            params ["_args","","","","_failureCode"];
+            params ["_args", "", "", "", "_failureCode"];
             _args params ["_vehicle"];
 
             // don't stop unflipping if waiting progressBar was closed by new progressBar
