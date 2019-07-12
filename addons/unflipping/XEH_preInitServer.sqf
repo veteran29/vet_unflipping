@@ -1,5 +1,8 @@
 #include "initSettings.sqf"
 
+#define UNFLIP_CHECK_WAITTIME       4
+#define UNFLIP_FORCEFACTOR_STEP     0.2
+#define UNFLIP_FORCEFACTOR_MAX      5
 
 ["vet_unflipping_unflip_start", {
     params ["_vehicle", "_player"];
@@ -31,7 +34,32 @@
             // onTimeout (success)
             {
                 params ["_vehicle"];
-                _vehicle call vet_unflipping_fnc_unflipVehicle;
+                private _unflipAttempted = _vehicle call vet_unflipping_fnc_unflipVehicle;
+
+                // check if unflip was successful
+                if (_unflipAttempted) then {
+                    [{
+                        params ["_vehicle"];
+
+                        if (isNull _vehicle) exitWith {};
+
+                        private _upsideDown = (vectorUp _vehicle vectorDotProduct surfaceNormal getPos _vehicle) < -0.80;
+                        private _bank = _vehicle call BIS_fnc_getPitchBank select 1;
+
+                        // unflip successful --> reset force factor
+                        if (!_upsideDown && 55 > abs _bank) then {
+                            _vehicle setVariable ["vet_forceFactor", nil, false];
+                            diag_log text format ["[VET_Unflipping] Vehicle '%1', unflip was successful.", _vehicle];
+
+                        // unflip unsuccessful --> increase force factor
+                        } else {
+                            private _forceFactor = ((_vehicle getVariable ["vet_forceFactor", 1]) + UNFLIP_FORCEFACTOR_STEP) min UNFLIP_FORCEFACTOR_MAX;
+                            _vehicle setVariable ["vet_forceFactor", _forceFactor, false];
+                            diag_log text format ["[VET_Unflipping] Vehicle '%1', unflip was unsuccessful. Increased force factor to %2", _vehicle, _forceFactor];
+                        };
+                    }, [_vehicle], UNFLIP_CHECK_WAITTIME] call CBA_fnc_waitAndExecute;
+                };
+
                 _vehicle setVariable ["vet_unflippingUnits", [], true];
             }
         ] call CBA_fnc_waitUntilAndExecute;

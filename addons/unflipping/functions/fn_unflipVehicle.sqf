@@ -15,6 +15,9 @@
     Returns:
         Vehicle was unflipped [BOOL]
 */
+
+#define UNFLIP_FORCEFACTOR_EXPIRATIONTIME   300
+
 params [
     ["_vehicle", objNull, [objNull]]
 ];
@@ -35,7 +38,17 @@ if (!_upsideDown && 55 > abs _bank) exitWith {false};
 private _bbr = boundingBoxReal _vehicle;
 private _vehicleWidth = abs (_bbr#0#0 * 2);
 
-private _force = getMass _vehicle * ([1 + (_vehicleWidth/10), _vehicleWidth] select _upsideDown);
+// force factor is set in vet_unflipping_unflip_start event
+private _lastUnflipAttempt = _vehicle getVariable ["vet_lastUnflipAttempt", CBA_missionTime];
+private _forceFactor = if ((CBA_missionTime - _lastUnflipAttempt) < UNFLIP_FORCEFACTOR_EXPIRATIONTIME) then {
+    _vehicle getVariable ["vet_forceFactor", 1]
+} else {
+    _vehicle setVariable ["vet_forceFactor", nil];
+    1
+};
+_vehicle setVariable ["vet_lastUnflipAttempt", CBA_missionTime];
+
+private _force = getMass _vehicle * ([1 + (_vehicleWidth/10), _vehicleWidth] select _upsideDown) * _forceFactor;
 
 private _forcePointX = _bbr select ([0, 1] select _flipLeft) select 0;
 private _forcePointZ = _bbr select ([1, 0] select _upsideDown) select 2;
