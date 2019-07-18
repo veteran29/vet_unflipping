@@ -3,7 +3,7 @@
 
     File: fn_canUnflipLocal.sqf
     Date: 2019-06-18
-    Last Update: 2019-06-18
+    Last Update: 2019-07-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -25,3 +25,4 @@ params [
 && {alive _target}
 && {(vehicle _unit) isEqualTo _unit}
 && {_unit call vet_unflipping_fnc_hasToolKitRequired}
+&& {[_unit, _target] call vet_unflipping_fnc_isServiceVehicleNearRequired}
