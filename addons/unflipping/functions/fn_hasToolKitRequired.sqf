@@ -3,7 +3,7 @@
 
     File: fn_hasToolKitRequired.sqf
     Date: 2019-03-18
-    Last Update: 2019-04-18
+    Last Update: 2019-06-18
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
 
     Description:
@@ -13,7 +13,7 @@
         _unit - Unit to check [OBJECT, defaults to objNull]
 
     Returns:
-        NOTHING
+        Can unflip [BOOL]
 */
 params [
     ["_unit", objNull, [objNull]]

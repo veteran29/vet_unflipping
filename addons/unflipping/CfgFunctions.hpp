@@ -8,10 +8,13 @@ class CfgFunctions
             file = "vet\unflipping\functions";
 
             class addUnflipActionLocal {};
+            class canUnflipLocal {};
+            class hasToolKitRequired {};
+            class isRepairVehicle {};
+            class isServiceVehicleNearRequired {};
             class unflipAction {};
             class unflipRequiredAmount {};
             class unflipVehicle {};
-            class hasToolKitRequired {};
         };
 
         class debug

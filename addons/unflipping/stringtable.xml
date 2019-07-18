@@ -92,6 +92,10 @@
         <Spanish>Un kit de herramientas es requerido para voltear vehículos</Spanish>
         <Chinesesimp>需要携带工具包才能翻正载具</Chinesesimp>
     </Key>
+    <Key ID="STR_vet_unflipping_require_serviceVehicle">
+        <Original>Require repair vehicle to unflip vehicle</Original>
+        <Polish>Wymagaj pojazdu naprawczego do odwracania pojazdów</Polish>
+    </Key>
 
     <!-- Actions -->
     <Key ID="STR_vet_unflipping_act">
