@@ -2,7 +2,7 @@ name = "VET_Unflipping"
 modname = "vet_unflipping"
 prefix = "vet"
 author = "veteran29"
-version = "1.3.0"
+version = "1.3.1"
 files = ["mod.cpp"]
 
 keyname = "{{prefix}}_unflipping_{{version}}"
