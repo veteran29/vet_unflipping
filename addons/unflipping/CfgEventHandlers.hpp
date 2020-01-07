@@ -1,9 +1,9 @@
 
-class Extended_PreInit_EventHandlers
+class Extended_PostInit_EventHandlers
 {
     class vet_unflipping
     {
-        serverInit = "call compile preprocessFileLineNumbers 'vet\unflipping\XEH_preInitServer.sqf'";
-        clientInit = "call compile preprocessFileLineNumbers 'vet\unflipping\XEH_preInitClient.sqf'";
+        serverInit = "call compile preprocessFileLineNumbers 'vet\unflipping\XEH_postInitServer.sqf'";
+        clientInit = "call compile preprocessFileLineNumbers 'vet\unflipping\XEH_postInitClient.sqf'";
     };
 };
