@@ -35,7 +35,7 @@
             设定一个单位可以翻正的物体的最大质量。
             默认值可使一个单位翻正大多数小型载具。
         </Chinesesimp>
-        <French>Définit le poid pouvant être retourné par une seule unité. La valeur par défaut devrait permettre à une seule unité de retourner la plupart des petits véhicules.  </French>
+        <French>Définit le poid pouvant être retourné par une seule unité. La valeur par défaut devrait permettre à une seule unité de retourner la plupart des petits véhicules.</French>
     </Key>
     <Key ID="STR_vet_unflipping_unit_man_limit">
         <Original>Man limit</Original>
