@@ -1,5 +1,3 @@
-#include "initSettings.sqf"
-
 #define PLAYER                  ([] call CBA_fnc_currentUnit)
 
 ["vet_unflipping_unflip_start_client", {

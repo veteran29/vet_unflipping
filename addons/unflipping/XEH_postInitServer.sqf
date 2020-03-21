@@ -1,5 +1,3 @@
-#include "initSettings.sqf"
-
 #define UNFLIP_CHECK_WAITTIME       4
 #define UNFLIP_FORCEFACTOR_STEP     0.2
 #define UNFLIP_FORCEFACTOR_MAX      5
